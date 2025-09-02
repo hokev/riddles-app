@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riddie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <span class="star">&#10022;</span>
+                <h1>Riddie</h1>
+            </div>
+            <div class="mode-select">
+                <select id="difficulty-select">
+                    <option value="kid">🧒 Kid</option>
+                    <option value="teen">🧑 Teen</option>
+                    <option value="pro">💎 Pro</option>
+                </select>
+            </div>
+        </div>
+        <div class="riddle-card">
+            <div class="riddle-number">Riddle #1</div>
+            <p class="riddle-text">I have keys but no locks. I have space but no room. You can enter but can't go outside. What am I?</p>
+            <button id="reveal-btn">
+                <span class="eye-icon">&#128065;</span>
+                Reveal Answer
+            </button>
+            <p class="answer" style="display: none;">A keyboard</p>
+        </div>
+        <button id="next-btn">Next Riddie &gt;</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

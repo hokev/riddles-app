@@ -1,0 +1,93 @@
+body {
+    font-family: sans-serif;
+    background: linear-gradient(to bottom, #8a2be2, #4b0082);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 350px;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo .star {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.mode-select select {
+    background-color: #9370db;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.riddle-card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    color: #333;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.riddle-number {
+    color: #8a2be2;
+    margin-bottom: 10px;
+}
+
+#reveal-btn {
+    background-color: #9370db;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 15px;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#reveal-btn .eye-icon {
+    margin-right: 10px;
+}
+
+#next-btn {
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    color: #8a2be2;
+    padding: 15px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.answer {
+    margin-top: 20px;
+    font-style: italic;
+}
