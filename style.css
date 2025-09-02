@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: sans-serif;
     background: linear-gradient(to bottom, #8a2be2, #4b0082);
@@ -7,10 +11,13 @@ body {
     align-items: center;
     min-height: 100vh;
     margin: 0;
+    padding: 20px;
+    overflow-x: hidden;
 }
 
 .container {
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     text-align: center;
 }
 
@@ -90,4 +97,52 @@ body {
 .answer {
     margin-top: 20px;
     font-style: italic;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+        min-height: 100vh;
+        align-items: flex-start;
+        padding-top: 40px;
+    }
+    
+    .container {
+        width: 100%;
+        max-width: none;
+    }
+    
+    .header {
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 30px;
+    }
+    
+    .logo h1 {
+        font-size: 2rem;
+        margin: 0;
+    }
+    
+    .riddle-card {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .riddle-text {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    
+    #reveal-btn, #next-btn {
+        padding: 12px;
+        font-size: 16px;
+    }
+}
+
+@media (max-height: 600px) {
+    body {
+        align-items: flex-start;
+        padding-top: 20px;
+    }
 }
